@@ -1,6 +1,11 @@
 #criando a lista de afazeres
 atividades = []
 
+with  open ("banco_de_dados.txt", "r") as arquivo: #abrindo o arquivo em txt
+            for tarefa in atividades:
+                atividades.append(tarefa.strip())
+
+
 while True:
     #criando o menu
     print("""
@@ -47,6 +52,8 @@ while True:
             for tarefa in atividades:
                 arquivo.write(tarefa + "\n") #escrevendo a tarefa
         print("Lista de tarefas salva com sucesso! ")
+
+     
         break
 
     
