@@ -1,0 +1,2 @@
+limpar
+lavar(X)
